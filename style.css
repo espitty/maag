@@ -87,7 +87,6 @@ nav ul {
 	flex: 1 1 75rem;
 	justify-content: space-around;
 	list-style: none;
-	position: fixed;
 }
 
 nav a {
