@@ -149,7 +149,7 @@ nav a:hover {
 	min-height: 90vh;
 	width: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-		url("/maag/img/pexels-flo-maderebner-755385.jpg") center center;
+		url("/img/pexels-flo-maderebner-755385.jpg") center center;
 	position: relative;
 	background-size: cover;
 }
@@ -196,7 +196,7 @@ nav a:hover {
 .about-us {
 	min-height: 90vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-		url("/maag/img/pastorsInside.jpg");
+		url("/img/pastorsInside.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -231,7 +231,7 @@ nav a:hover {
 
 #hours {
 	min-height: 90vh;
-	background: url("/maag/img/pexels-wendy-van-zyl-1112048.jpg");
+	background: url("/img/pexels-wendy-van-zyl-1112048.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -282,7 +282,7 @@ p {
 /* Vist Us Section */
 
 #location {
-	background: url("/maag/img/pexels-aksonsat-uanthoeng-1078850.jpg");
+	background: url("/img/pexels-aksonsat-uanthoeng-1078850.jpg");
 	min-height: 90vh;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -310,7 +310,7 @@ p {
 
 #up-coming {
 	min-height: 90vh;
-	background: url("/maag/img/pexels-rodnae-productions-7551751.jpg");
+	background: url("/img/pexels-rodnae-productions-7551751.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Cinzel", serif;
@@ -326,7 +326,7 @@ p {
 
 #contact-us {
 	min-height: 90vh;
-	background: url("/maag/img/pastorsOutside.jpg");
+	background: url("/img/pastorsOutside.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
