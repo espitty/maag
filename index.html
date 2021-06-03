@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icons" href="/icons/">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="icons" href="/maag/icons/">
+    <link rel="stylesheet" href="/maag/style.css">
     <title>Mescalero Apache Assembly of God Church</title>
 </head>
 <body>
     <header class="main-head">
         <nav>
             <h1 id="logo">MAAG</h1>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#welcome">Welcome</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#hours">Worship Time</a></li>
@@ -25,108 +25,116 @@
                 <li><a href="#up-coming">Up Coming Events</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
+            <div class="burger">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
         </nav>
     </header>
 
-    <section id="welcome">
-        <header class="welcome-head">
-                <h2>Welcome</h2>
-                <p>Welcome to Mescalero Apache Assembly of God. Our mission is simple:<br>
-                    Connecting people to God, friends, ministry, and the world. We hope<br>
-                    you are planning to attend our services soon.<br>
-                </p>
-        </header>
-    </section>
-
-    <section id="about-us">
-        <header class="about-us">
-            <h2>About Us</h2>
-            <p>
-                Pastors Gary and Bonnie Dorsey have a heart to see people not only come<br>
-                to Christ, but fulfilling the great commission and using their talents<br>
-                and abilities to advance God's Kingdom.<br>
-            </p>
-            <img src="/img/mist2.png" class="mist-anim" alt="animated mist">
-            <img src="/img/mist3.png" class="mist-anim2" alt="">
-        </header>
-    </section>
-
-    <section id="hours">
-        <header class="hours-head">
-            <h2>Our Hours of Worship are:</h2>
-        </header>
-        <div class="cards">
-            <div class="card">
-                <div class="card-icon">
-                    <img src="/icons/prayer.svg" alt="">
-                </div>
-                <h4>Sunday</h4>
-                <p>
-                    Adult Bible Study:          9:30 AM
-                    <br>
-                    Morning Worship & Message:  10:30 AM
-                    <br>
-                    Youth & Children:           11:15 AM
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">
-                    <img src="/icons/bible.svg" alt="">
-                </div>
-                <h4>Wednesday</h4>
-                <p>
-                    Praise & Worship:           6:30 PM
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="location">
-        <header class="header-location">
-            <h2>Visit Us Here</h2>
-            <div class="location-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13359.66766386365!2d-105.80955400000002!3d33.163808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4afea6ed00e80e67!2sMescalero%20Family%20Worship%20Center!5e0!3m2!1sen!2sus!4v1621649903706!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-        </header>
-    </section>
-
-    <section id="up-coming">
-        <header class="events-header">
-            <h2>Up Coming Events</h2>
-        </header>
-    </section>
-
-    <section id="contact-us">
-        <div class="form-wrapper">
-            <header class="contact-header">
-                <h2>Contact Us</h2>
+    <main>
+        <section id="welcome">
+            <header class="welcome-head">
+                    <h2>Welcome</h2>
+                    <p>Welcome to Mescalero Apache Assembly of God. Our mission is simple:<br>
+                        Connecting people to God, friends, ministry, and the world. We hope<br>
+                        you are planning to attend our services soon.<br>
+                    </p>
+                    <img src="/maag/img/mist2.png" class="mist-anim" alt="animated mist">
+                    <img src="/maag/img/mist3.png" class="mist-anim2" alt="">
             </header>
+        </section>
 
-            <form action="">
-                <div class="name-form">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" required placeholder="Your full name.">
-                </div>
-                <div class="email-form">
-                    <label for="email">Email:</label>
-                    <input type="email" required name="email" placeholder="Your email.">
-                </div>
-                <div class="message-form">
-                    <label class="message-label" for="message">Message:</label>
-                    <textarea name="message" id="message-box" cols="30" rows="10" placeholder="Please leave a message."></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
+        <section id="about-us">
+            <header class="about-us">
+                <h2>About Us</h2>
+                <p>
+                    Pastors Gary and Bonnie Dorsey have a heart to see people not only come
+                    to Christ, but fulfilling the great commission and using their talents
+                    and abilities to advance God's Kingdom.
+                </p>
+            </header>
+        </section>
 
-    <footer>
+        <section id="hours">
+            <header class="hours-head">
+                <h2>Our Hours of Worship are:</h2>
+            </header>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="/maag/icons/prayer.svg" alt="">
+                    </div>
+                    <h4>Sunday</h4>
+                    <p>
+                        Adult Bible Study:          9:30 AM
+                        <br>
+                        Morning Worship & Message:  10:30 AM
+                        <br>
+                        Youth & Children:           11:15 AM
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="/maag/icons/bible.svg" alt="">
+                    </div>
+                    <h4>Wednesday</h4>
+                    <p>
+                        Praise & Worship:           6:30 PM
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <header class="header-location">
+                <h2>Visit Us Here</h2>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13359.66766386365!2d-105.80955400000002!3d33.163808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4afea6ed00e80e67!2sMescalero%20Family%20Worship%20Center!5e0!3m2!1sen!2sus!4v1621649903706!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </header>
+        </section>
+
+        <section id="up-coming">
+            <header class="events-header">
+                <h2>Up Coming Events</h2>
+            </header>
+        </section>
+
+        <section id="contact-us">
+            <div class="form-wrapper">
+                <header class="contact-header">
+                    <h2>Contact Us</h2>
+                </header>
+
+                <form action="">
+                    <div class="name-form">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" required placeholder="Your full name.">
+                    </div>
+                    <div class="email-form">
+                        <label for="email">Email:</label>
+                        <input type="email" required name="email" placeholder="Your email.">
+                    </div>
+                    <div class="message-form">
+                        <label class="message-label" for="message">Message:</label>
+                        <textarea name="message" id="message-box" cols="30" rows="10" placeholder="Please leave a message."></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
             <p>
                 This webpage is dedicated to the memory of Rema P. Spitty, who was a lifelong member of our church. <br> 1957 - 2019.
             </p>
     </footer>
+    <script src="/maag/app.js"></script>
     
 </body>
 </html>

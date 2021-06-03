@@ -9,7 +9,7 @@
 html {
 	font-size: 62.5%;
 	scroll-padding: 10vh;
-	scroll-padding: smooth;
+	scroll-behavior: smooth;
 }
 
 h1 {
@@ -69,7 +69,7 @@ body {
 	color: white;
 	position: sticky;
 	top: 0px;
-	z-index: 3;
+	z-index: 4;
 }
 
 nav {
@@ -85,10 +85,9 @@ nav {
 nav ul {
 	display: flex;
 	flex: 1 1 75rem;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-evenly;
 	list-style: none;
-	position: relative;
+	position: fixed;
 }
 
 nav a {
@@ -105,6 +104,11 @@ nav a:hover {
 	flex: 2 1 40rem;
 	font-family: "Pattaya", sans-serif;
 	font-weight: 400;
+}
+
+.burger,
+.menu-check {
+	display: none;
 }
 
 /* Welcome Section */
@@ -136,10 +140,16 @@ nav a:hover {
 	}
 }
 
+#welcome {
+	display: flex;
+	width: 100%;
+}
+
 .welcome-head {
 	min-height: 90vh;
+	width: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-		url("/img/pexels-flo-maderebner-755385.jpg") center center;
+		url("/maag/img/pexels-flo-maderebner-755385.jpg") center center;
 	position: relative;
 	background-size: cover;
 }
@@ -163,6 +173,7 @@ nav a:hover {
 
 .mist-anim {
 	position: absolute;
+	display: flex;
 	bottom: 0%;
 	z-index: 2;
 	animation: mist 3s infinite alternate ease-in-out;
@@ -172,6 +183,7 @@ nav a:hover {
 
 .mist-anim2 {
 	position: absolute;
+	display: flex;
 	bottom: 0%;
 	z-index: 1;
 	overflow: hidden;
@@ -184,7 +196,7 @@ nav a:hover {
 .about-us {
 	min-height: 90vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-		url("/img/pastorsInside.jpg");
+		url("/maag/img/pastorsInside.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -219,7 +231,7 @@ nav a:hover {
 
 #hours {
 	min-height: 90vh;
-	background: url("/img/pexels-wendy-van-zyl-1112048.jpg");
+	background: url("/maag/img/pexels-wendy-van-zyl-1112048.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -270,7 +282,7 @@ p {
 /* Vist Us Section */
 
 #location {
-	background: url("/img/pexels-aksonsat-uanthoeng-1078850.jpg");
+	background: url("/maag/img/pexels-aksonsat-uanthoeng-1078850.jpg");
 	min-height: 90vh;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -298,7 +310,7 @@ p {
 
 #up-coming {
 	min-height: 90vh;
-	background: url("/img/pexels-rodnae-productions-7551751.jpg");
+	background: url("/maag/img/pexels-rodnae-productions-7551751.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Cinzel", serif;
@@ -314,7 +326,7 @@ p {
 
 #contact-us {
 	min-height: 90vh;
-	background: url("/img/pastorsOutside.jpg");
+	background: url("/maag/img/pastorsOutside.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -376,4 +388,214 @@ footer {
 	padding: 0% 20%;
 	align-items: center;
 	text-align: center;
+}
+
+/* Media Query */
+
+@media screen and (max-height: 890px) {
+	#welcome {
+		animation: none;
+	}
+}
+
+@media screen and (max-width: 842px) {
+	#welcome {
+		animation: none;
+	}
+	.welcome {
+		width: 100%;
+	}
+
+	.welcome-head h2 {
+		font-size: xx-large;
+	}
+
+	.welcome-head p {
+		padding: 5rem 3rem;
+		font-size: x-large;
+	}
+
+	.mist-anim {
+		display: none;
+	}
+
+	.mist-anim2 {
+		display: none;
+	}
+
+	/* Burger Menu */
+	.burger {
+		position: relative;
+		display: block;
+		cursor: pointer;
+	}
+	.burger span {
+		padding: 0.2rem 2rem;
+		background: white;
+		margin: 0.5rem 0rem;
+		display: block;
+		transition: all 0.5s ease;
+	}
+
+	.nav-links a {
+		color: white;
+		font-size: 1.4rem;
+		text-decoration: underline;
+		align-items: flex-end;
+	}
+
+	.nav-links {
+		background: black;
+		color: white;
+		width: 100%;
+		height: 50%;
+		position: fixed;
+		top: 0;
+		left: 100%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		transition: transform 1s ease;
+	}
+
+	.nav-links ul {
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.nav-open {
+		transform: translateX(-100%);
+	}
+
+	.toggle .line1 {
+		transform: rotateZ(45deg) translateY(300%);
+		background: white;
+	}
+
+	.toggle .line2 {
+		opacity: 0;
+	}
+
+	.toggle .line3 {
+		transform: rotateZ(-45deg) translateY(-300%);
+		background: white;
+	}
+
+	/* About Us Section */
+
+	.about-us header {
+		padding: 3rem 3rem;
+	}
+
+	.about-us p {
+		font-size: large;
+		margin-left: 5%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		position: absolute;
+		word-wrap: normal;
+		line-break: auto;
+	}
+
+	.about-us h2 {
+		margin-left: 5%;
+		font-size: xx-large;
+	}
+
+	/* Hours Section */
+
+	.hours-head header {
+		padding: 3rem 3rem;
+	}
+
+	.hours-head h2 {
+		padding-top: 5%;
+		font-size: large;
+	}
+
+	/* Location Section */
+
+	.header-location header {
+		padding: 3rem 3rem;
+	}
+
+	.header-location h2 {
+		margin-left: 5%;
+		font-size: xx-large;
+	}
+
+	/* Up Coing Events */
+
+	#up-coming {
+		background-size: cover;
+	}
+
+	.events-header header {
+		padding: 3rem 3rem;
+	}
+
+	.events-header h2 {
+		margin-left: 5%;
+		font-size: xx-large;
+	}
+
+	/* Contact Us Section */
+
+	#contact-us {
+		background: lightskyblue;
+	}
+
+	.form-wrapper {
+		background: rgba(19, 28, 39, 0.5);
+		width: 80%;
+		color: white;
+		border-radius: 20px;
+		position: relative;
+		align-items: center;
+	}
+
+	.form-wrapper h2 {
+		text-align: center;
+	}
+
+	.form-head {
+		text-align: center;
+		padding: 4rem;
+	}
+
+	.name-form,
+	.email-form,
+	.message-form {
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.form-wrapper label {
+		margin: 0rem 3rem;
+		vertical-align: middle;
+		align-items: center;
+	}
+
+	.form-wrapper label.message-label {
+		vertical-align: middle;
+	}
+
+	.form-wrapper button {
+		width: 100%;
+		padding: 2rem;
+		margin-top: 8rem;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+
+	.form-wrapper input {
+		padding: 1rem 2rem;
+	}
+
+	/* Footer Section */
+
+	.footer-section p {
+		font-size: large;
+		text-align: center;
+	}
 }
